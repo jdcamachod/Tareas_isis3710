@@ -1,44 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página personal</title>
-</head>
-<body id="body">
+    <style>
+      * {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 5 px;
+      }
+    </style>
+  </head>
+  <body id="body">
     <header>
-        <h1>Juan Diego Camacho</h1>
-        <img src="photo.jpg" alt="Personal photo" width="250px" height="320px">
+      <h1>Juan Diego Camacho</h1>
+      <img src="photo.jpg" alt="Personal photo" width="190px" height="250px" />
     </header>
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#about_me">About me</a></li>
-            <li><a href="#academic">Academic Data</a></li>
-            <li><a href="#interest">Interests</a></li>
-            <li><a href="#contact">Contact me!</a></li>
-        </ul>  
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#about_me">About me</a></li>
+        <li><a href="#academic">Academic Data</a></li>
+        <li><a href="#interest">Interests</a></li>
+        <li><a href="#contact">Contact me!</a></li>
+      </ul>
     </nav>
     <main>
-        <section id="introduction">
-            <h2>Personal page!</h2>
-            <p>Welcome! This is my personal page developed in HTML. In this page you will see a little about who I am</p>
-            <p>I hope you like it!</p>
-        </section>
-        <section id="about_me">
-            <table>
-                <tr>
-                    <td>dad</td>
-                    <td>dadssa</td>
-                    <td>dasda</td>
-                </tr>
-            </table>
-        </section>
-        <section id="academic"></section>
-        <section id="interest"></section>
-        
+      <section id="introduction">
+        <h2>Personal page!</h2>
+        <p>
+          Welcome! This is my personal page developed in HTML. In this page you
+          will see a little about who I am
+        </p>
+        <p>I hope you like it!</p>
+      </section>
+      <section id="about_me">
+        <h2>About me</h2>
+        <table style="width: 40%">
+          <tr>
+            <td>Full name</td>
+            <td>Juan Diego Camacho Daza</td>
+          </tr>
+          <tr>
+            <td>Date of birth</td>
+            <td>19th March 2000</td>
+          </tr>
+          <tr>
+            <td>Place of birth</td>
+            <td>Chía</td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Where I live</td>
+            <td>Chía</td>
+          </tr>
+          <tr>
+            <td>phone</td>
+            <td>3134561991</td>
+          </tr>
+        </table>
+      </section>
+      <section id="academic">
+        <h2>Academic Data</h2>
+        <ul>
+          <li>I'm currently in 8th Semester of Systems Engineering.</li>
+          <li>I'm interested in Machine Learning with computer vision.</li>
+          <li>I have some experience with backend development with Python.</li>
+          <li>I'm looking forward to learn more about web development.</li>
+        </ul>
+      </section>
+      <section id="interest">
+        <h2>Interests</h2>
+        <p>
+          Currently, I don't have any favorite videos on any platform. But I
+          like some music videos sometimes and this is one that I like at the
+          moment.
+        </p>
+        <div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/fnlJw9H0xAM"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Right now my favorite artist is Eminem. I like some of his old songs
+          </p>
+          <img src="eminem.jpg" alt="Eminem Picture" height="250" width="350" />
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact me!</h2>
+        <form>
+          <label for="Name">Name:</label>
+          <br>
+          <input type="text" name="Name" style="width: 40%;">
+          <br>
+          <label for="email">Email:</label>
+          <br>
+          <input type="text" name="email" style="width: 40%;">
+          <br>
+          <label for="message">Message:</label>
+          <br>
+          <textarea name="message"  cols="30" rows="10" style="width: 40%;"></textarea>
+      </section>
     </main>
-    <footer id="contact">Contact me!</footer>
-</body>
+    <footer>
+      <p>
+        Here is my
+        <a href="https://www.linkedin.com/in/juan-diego-camacho-daza-bb1073196/"
+          >LinkedIn</a
+        >!
+        <br />
+        Send me an <a href="mailto:jd.camachod@uniandes.edu.co">email</a>
+      </p>
+    </footer>
+  </body>
 </html>
