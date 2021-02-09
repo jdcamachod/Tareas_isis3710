@@ -1,0 +1,18 @@
+h1 {
+  color: red;
+}
+
+h2.azul {
+  color: blue;
+}
+h2.naranja {
+  color: orange;
+}
+p {
+  text-align: center;
+}
+
+p.parr2 {
+  color: blue;
+  font-weight: bold;
+}

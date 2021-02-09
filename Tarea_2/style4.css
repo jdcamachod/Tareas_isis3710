@@ -1,0 +1,11 @@
+input.textbox {
+  background-color: greenyellow;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+#edad {
+  color: orangered;
+  font-weight: bolder;
+  font-size: large;
+}
